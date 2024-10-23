@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: flex-start; /* Alinea al inicio */
+    min-height: 100vh; /* Hace que el body ocupe toda la altura de la ventana */
+    background-color: #1a1a1a; /* Fondo oscuro */
+    margin: 0;
+    color: #e0e0e0; /* Color de texto claro */
+}
+
+#header {
+    display: flex;
+    justify-content: space-between; /* Espacia el contenido dentro del header */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Ocupa el ancho completo */
+    padding: 20px; /* Espaciado interno */
+    background-color: #222; /* Fondo oscuro para el header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+#login-button {
+    background-color: #d8c49a; /* Color de fondo beige */
+    color: #1a1a1a; /* Texto oscuro */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-left: 20px; /* Espacio a la izquierda del botón */
+}
+
+#login-button:hover {
+    background-color: #c6b89b; /* Color más oscuro al pasar el mouse */
+}
+
+#search-container {
+    margin: 20px 0; /* Margen superior e inferior */
+    display: flex; /* Flexbox para el buscador */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+#search {
+    padding: 10px;
+    border: 2px solid #d8c49a; /* Borde beige */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 300px; /* Ancho del input */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #333; /* Fondo oscuro para el input */
+    color: #e0e0e0; /* Color de texto claro */
+}
+
+#search button {
+    padding: 10px 15px;
+    background-color: #d8c49a; /* Fondo beige */
+    color: #1a1a1a; /* Texto oscuro */
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px; /* Espacio entre el input y el botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px;
+}
+
+#search button:hover {
+    background-color: #c6b89b; /* Color más oscuro al pasar el mouse */
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las imágenes */
+}
+
+.photo {
+    margin: 10px; /* Espacio entre las imágenes */
+    border: 2px solid #d8c49a; /* Borde beige */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Para que el contenido no se salga del borde */
+    background-color: #222; /* Fondo oscuro para las imágenes */
+    width: 250px; /* Ajusta el tamaño de las fotos */
+}
+
+.photo img {
+    width: 100%; /* Mantiene el tamaño dentro del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+    display: block; /* Evita el espacio debajo de las imágenes */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.photo img:hover {
+    transform: scale(1.05); /* Aumentar el tamaño de la imagen al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra más intensa al hacer hover */
+}
